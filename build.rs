@@ -17,6 +17,10 @@ fn main() {
         // bindings for.
         .header("wrapper.h")
         .clang_macro_fallback()
+        .default_enum_style(bindgen::EnumVariation::NewType {
+            is_bitfield : true,
+            is_global : false
+        })
         // Tell cargo to invalidate the built crate whenever any of the
         // included header files changed.
         .parse_callbacks(Box::new(bindgen::CargoCallbacks::new()))
