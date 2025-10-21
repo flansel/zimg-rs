@@ -21,6 +21,7 @@ fn main() {
             is_bitfield : true,
             is_global : false
         })
+        .derive_default(true)
         // Tell cargo to invalidate the built crate whenever any of the
         // included header files changed.
         .parse_callbacks(Box::new(bindgen::CargoCallbacks::new()))
