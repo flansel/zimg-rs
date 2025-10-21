@@ -1,0 +1,11 @@
+[package]
+name = "zimg-rs"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.72.1"
